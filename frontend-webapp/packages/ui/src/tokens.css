@@ -1,0 +1,65 @@
+/* Starter subset of the design tokens in 05-UIUX-Design.md §6. */
+:root {
+  --rf-accent-400: #2dd4bf;
+  --rf-accent-500: #14b8a6;
+  --rf-accent-600: #0d9488;
+  --rf-space-2: 8px;
+  --rf-space-4: 16px;
+  --rf-radius-md: 10px;
+}
+:root,
+[data-theme='dark'] {
+  --rf-bg: #09090b;
+  --rf-surface: #18181b;
+  --rf-surface-2: #27272a;
+  --rf-text: #fafaf9;
+  --rf-text-muted: #a1a1aa;
+  --rf-border: #3f3f46;
+  --rf-accent: var(--rf-accent-400);
+}
+[data-theme='light'] {
+  --rf-bg: #fffdf9;
+  --rf-surface: #faf8f4;
+  --rf-surface-2: #f0ede4;
+  --rf-text: #1c1917;
+  --rf-text-muted: #57534e;
+  --rf-border: #e7e2d6;
+  --rf-accent: var(--rf-accent-600);
+}
+body {
+  margin: 0;
+  background: var(--rf-bg);
+  color: var(--rf-text);
+  font-family: system-ui, sans-serif;
+}
+.rf-header {
+  display: flex;
+  align-items: center;
+  gap: var(--rf-space-4);
+  padding: var(--rf-space-4);
+  border-bottom: 1px solid var(--rf-border);
+}
+.rf-nav { display: flex; gap: var(--rf-space-4); }
+.rf-nav a { color: var(--rf-text); }
+.rf-card {
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius-md);
+  padding: var(--rf-space-4);
+}
+.rf-btn {
+  padding: var(--rf-space-2) var(--rf-space-4);
+  border-radius: var(--rf-radius-md);
+  border: 1px solid var(--rf-border);
+  background: var(--rf-accent-600);
+  color: #fff;
+  cursor: pointer;
+}
+.rf-input {
+  padding: var(--rf-space-2);
+  border-radius: var(--rf-radius-md);
+  border: 1px solid var(--rf-border);
+  background: var(--rf-bg);
+  color: var(--rf-text);
+}
+.rf-muted { color: var(--rf-text-muted); }

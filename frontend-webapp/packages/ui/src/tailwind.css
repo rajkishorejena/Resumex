@@ -1,0 +1,22 @@
+/* Tailwind utilities generated from the semantic --rf-* tokens in tokens.css.
+   Import this AFTER tokens.css so utilities like bg-rf-bg resolve through
+   the same runtime variables the theme toggle already updates. */
+@import 'tailwindcss';
+
+@theme {
+  --color-rf-bg: var(--rf-bg);
+  --color-rf-surface: var(--rf-surface);
+  --color-rf-surface-2: var(--rf-surface-2);
+  --color-rf-text: var(--rf-text);
+  --color-rf-text-muted: var(--rf-text-muted);
+  --color-rf-border: var(--rf-border);
+  --color-rf-accent: var(--rf-accent);
+  --color-rf-accent-400: var(--rf-accent-400);
+  --color-rf-accent-500: var(--rf-accent-500);
+  --color-rf-accent-600: var(--rf-accent-600);
+
+  --spacing-rf-2: var(--rf-space-2);
+  --spacing-rf-4: var(--rf-space-4);
+
+  --radius-rf-md: var(--rf-radius-md);
+}

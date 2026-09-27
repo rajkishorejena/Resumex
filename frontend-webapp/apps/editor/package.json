@@ -1,0 +1,31 @@
+{
+  "name": "@resumex/editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.0",
+    "@resumex/ui": "workspace:*",
+    "@resumex/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@rspack/core": "^1.0.14",
+    "@rspack/cli": "^1.0.14",
+    "@module-federation/enhanced": "^0.8.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2",
+    "@testing-library/react": "^16.0.1",
+    "jsdom": "^25.0.1"
+  }
+}
